@@ -33,27 +33,21 @@
                 <p class="lead">Type the name of a country to see its map and some basic info.</p>
                 <hr class="my-4">
 
-                <!-- forma -->
-                <form class="form-inline">
-                    <div class="form-group mx-sm-3 mb-2">
-                        <input type="text" class="form-control" id="country" placeholder="Type name">
+                    <div class="input-group form-group mx-sm-3 mb-2">
+                        <input type="text" class="col-8 form-control" id="country" placeholder="Type name">
+                        <span class="input-group-btn">
+                        <button id="getinfo" type="button" class="btn btn-primary mb-2 px-5"><i
+                                class="fas fa-map-marker-alt"></i> Get Country</button></span>
                     </div>
-                    <button id="getinfo" type="button" class="btn btn-primary mb-2 px-5"><i
-                            class="fas fa-map-marker-alt"></i> Get Country</button>
-
-                </form>
             </div>
         </section>
 
         <!-- MAP-INFO -->
         <section class="row">
             <div id="map" class="rounded-sm px-0 col-8 bg-primary text-white"></div>
-            <div id="info" class="rounded-sm col bg-dark text-white p-5">INFO</div>
+            <div id="info" class="rounded-sm col bg-dark text-white p-4">INFO</div>
         </section>
-
     </div>
-
-    <!-- <div id="map" class="map"></div> -->
 
     <script src="app.js"></script>
 </body>

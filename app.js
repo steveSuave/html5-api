@@ -54,8 +54,6 @@ function clickHandler() {
 
 $("#country").keyup(function (event) {
     if (event.keyCode === 13) {
-        e.preventDefault();
         $("#getinfo").click();
-        return false;
     }
 });
