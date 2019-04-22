@@ -1,0 +1,7 @@
+body {
+	background-color: #712323;
+}
+
+#map, #info {
+    height: 250px;
+}

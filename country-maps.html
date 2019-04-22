@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Country Info App</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- OpenLayers (maps) -->
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container mt-4">
+
+        <!-- JUMBOTRON -->
+        <section class="row">
+            <div class="jumbotron col-12 p-5">
+                <h1 class="display-4 font-weight-bold"><i class="fas fa-globe-americas"></i> Country info</h1>
+                <p class="lead">Type the name of a country to see its map and some basic info.</p>
+                <hr class="my-4">
+
+                <!-- forma -->
+                <form class="form-inline">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input type="text" class="form-control" id="country" placeholder="Type name">
+                    </div>
+                    <button id="getinfo" type="button" class="btn btn-primary mb-2 px-5"><i
+                            class="fas fa-map-marker-alt"></i> Get Country</button>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- MAP-INFO -->
+        <section class="row">
+            <div id="map" class="rounded-sm px-0 col-8 bg-primary text-white"></div>
+            <div id="info" class="rounded-sm col bg-dark text-white p-5">INFO</div>
+        </section>
+
+    </div>
+
+    <!-- <div id="map" class="map"></div> -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>
